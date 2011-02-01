@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsonicPlayer", "SubsonicMono\SubsonicPlayer.csproj", "{416D955F-4CD9-41C8-BB9D-BF17B59710B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsonicAPI", "SubsonicAPI\SubsonicAPI.csproj", "{AD32EC84-3CE8-4E20-934E-6B4F40A9BC08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsonicWeb", "SubsonicWeb\SubsonicWeb.csproj", "{91BB17F9-5F24-4329-BA99-8A96B800416E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{416D955F-4CD9-41C8-BB9D-BF17B59710B8}.Debug|x86.ActiveCfg = Debug|x86
+		{416D955F-4CD9-41C8-BB9D-BF17B59710B8}.Debug|x86.Build.0 = Debug|x86
+		{416D955F-4CD9-41C8-BB9D-BF17B59710B8}.Release|x86.ActiveCfg = Release|x86
+		{416D955F-4CD9-41C8-BB9D-BF17B59710B8}.Release|x86.Build.0 = Release|x86
+		{91BB17F9-5F24-4329-BA99-8A96B800416E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91BB17F9-5F24-4329-BA99-8A96B800416E}.Debug|x86.Build.0 = Debug|Any CPU
+		{91BB17F9-5F24-4329-BA99-8A96B800416E}.Release|x86.ActiveCfg = Release|Any CPU
+		{91BB17F9-5F24-4329-BA99-8A96B800416E}.Release|x86.Build.0 = Release|Any CPU
+		{AD32EC84-3CE8-4E20-934E-6B4F40A9BC08}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD32EC84-3CE8-4E20-934E-6B4F40A9BC08}.Debug|x86.Build.0 = Debug|Any CPU
+		{AD32EC84-3CE8-4E20-934E-6B4F40A9BC08}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD32EC84-3CE8-4E20-934E-6B4F40A9BC08}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SubsonicMono\SubsonicPlayer.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsonicPlayer", "SubsonicPlayer\SubsonicPlayer.csproj", "{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsonicAPI", "SubsonicAPI\SubsonicAPI.csproj", "{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Debug|x86.ActiveCfg = Debug|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Debug|x86.Build.0 = Debug|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Release|Any CPU.ActiveCfg = Release|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Release|x86.ActiveCfg = Release|x86
+		{DCD7B803-6052-4B77-8DF5-91B0BBA2CA19}.Release|x86.Build.0 = Release|x86
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8EFE676D-0D2D-466A-B6D3-91F93FE71ADC}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
