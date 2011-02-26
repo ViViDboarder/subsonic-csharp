@@ -31,7 +31,7 @@ namespace SubsonicAPI
     {
         public enum SubsonicItemType
         {
-            Folder, Song, Artist, Library
+            Folder, Song, Artist, Library, Playlist
         }
 		
         public string name;
@@ -572,12 +572,15 @@ namespace SubsonicAPI
 			StreamReader sr = new StreamReader(theStream);
 			string result = sr.ReadToEnd();
 
+			/// TODO: Parse result to list
 			
 			return nowPlaying;
 		}
 		
 		/// <summary>
-		/// Performs a search valid for the current version of the subsonic server 
+		/// Performs a search valid for the current version of the subsonic server
+		/// If version is >= 1.4.0 search2
+		/// Else search
 		/// </summary>
 		/// <param name="query">The Term you want to search for</param>
 		/// <returns>A List of SubsonicItem objects</returns>
@@ -587,6 +590,7 @@ namespace SubsonicAPI
 			Version apiV = new Version(apiVersion);
 			Version Search2Min = new Version("1.4.0");
 			string request = "";
+			// Use search for the server version
 			if (apiV >= Search2Min)
 			{
 				request = "search2";
@@ -642,6 +646,49 @@ namespace SubsonicAPI
 			
 			return searchResults;
 		}
+		
+		/// <summary>
+		/// Returns a list of all playlists on server 
+		/// </summary>
+		public static List<SubsonicItem> GetPlaylists()
+		{
+			List<SubsonicItem> playlists = new List<SubsonicItem>();
+			
+			Dictionary<string, string> theParameters = new Dictionary<string, string>();			
+			Stream theStream = MakeGenericRequest("getPlaylists", theParameters);
+			StreamReader sr = new StreamReader(theStream);
+			string result = sr.ReadToEnd();
+			
+			/// TODO: Parse result into list
+			
+			return playlists;
+		}
+		
+		/// <summary>
+		/// Returns a list of all SubsonicItems in playlist of given ID 
+		/// </summary>
+		/// <param name="playlistId">
+		/// ID of playlist to be fetched [retreive from GetPlaylists()]
+		/// </param>
+		/// <returns>
+		/// Returns list of SubsonicItems
+		/// </returns>
+		public static List<SubsonicItem> GetPlaylist(string playlistId)
+		{
+			List<SubsonicItem> playlist = new List<SubsonicItem>();
+			
+			Dictionary<string, string> theParameters = new Dictionary<string, string>();
+			theParameters.Add("id", playlistId);
+			Stream theStream = MakeGenericRequest("getPlaylist", theParameters);
+			StreamReader sr = new StreamReader(theStream);
+			string result = sr.ReadToEnd();
+			
+			/// TODO: Parse result into list
+			
+			return playlist;
+		}
+		
+		
 		
     }
 
